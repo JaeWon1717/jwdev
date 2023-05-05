@@ -1,16 +1,15 @@
-#include<iostream>
-
+#include <iostream>
 using namespace std;
 
-int main()
-{
-	int a1, a2, b1, b2, c1, c2, d1=0, d2 = 0;
-	cin >> a1 >> a2 >> b1 >> b2 >> c1 >> c2;
-	if (a1 == b1)cout << c1;
-	if (a1 == c1) cout << b1;
-	if (b1 ==c1)cout << a1;
-	cout << " ";
-	if (a2 == b2)cout << c2;
-	if (a2 == c2)cout << b2;
-	if (b2 == c2)cout << a2;
+int main(){
+  int x1=0, x2=0, x3=0, y1=0, y2=0, y3=0;
+  cin>>x1>>y1>>x2>>y2>>x3>>y3;
+
+  if(x1 == x2)cout<<x3<<" ";
+  else if(x1 == x3)cout<<x2<<" ";
+  else cout<<x1<<" ";
+
+  if(y1 == y2)cout<<y3;
+  else if(y1 == y3)cout<<y2;
+  else cout<<y1;
 }
