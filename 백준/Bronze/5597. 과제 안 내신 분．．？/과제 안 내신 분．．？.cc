@@ -15,16 +15,16 @@ int main()
 	//{
 	//	arr[i] = i;
 	//}
-	for (int i = 0; i < 28; i++)
+	for (int i = 1; i <= 28; i++)
 	{
 		cin >> value;
-		arr[value-1] = 1;
+		arr[value] = 1;
 	}
 	//arr[0] = 1;
-	for (int i = 0; i < 30; i++)
+	for (int i = 1; i <= 30; i++)
 	{
 		if (arr[i] != 1)
-			cout <<i+1<<"\n";
+			cout <<i<<"\n";
 	}
 }
 
